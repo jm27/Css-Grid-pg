@@ -31,7 +31,7 @@ article {
 .content.first article {
   grid-column: 1;
   grid-row: span 3;
-background-color: #2eb300;
+  background-color: #2eb300;
 }
 
 .content.first article:nth-child(3) {
@@ -59,7 +59,7 @@ background-color: #2eb300;
 .content.second article {
   grid-column: 1;
   grid-row: 1;
-background-color: #41C300;
+  background-color: #41c300;
 }
 
 .content.second article:nth-child(2) {
@@ -91,7 +91,7 @@ background-color: #41C300;
 .content.third article {
   grid-column: 1;
   grid-row: 1;
-background-color: #2eb300;
+  background-color: #2eb300;
 }
 
 .content.third article:nth-child(2) {
@@ -111,38 +111,38 @@ background-color: #2eb300;
 }
 
 .content.fourth article {
-background-color: #41C300;
+  background-color: #41c300;
 }
 /* Fifth section with the class content and first */
 .content.fifth {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 150px);
-    gap: 0px;
-  }
-  
-  .content.fifth article {
-    grid-column: 1;
-    grid-row: 1;
-  background-color: #41C300;
-  }
-  
-  .content.fifth article:nth-child(2) {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .content.fifth article:nth-child(3) {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .content.fifth article:nth-child(4) {
-    grid-column: 1;
-    grid-row: 3;
-  }
-  .content.fifth article:nth-child(5) {
-    grid-column: 3;
-    grid-row: 3;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 100px);
+  gap: 0px;
+}
+
+.content.fifth article {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #2eb300;
+}
+
+.content.fifth article:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+.content.fifth article:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.content.fifth article:nth-child(4) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.content.fifth article:nth-child(5) {
+  grid-column: 3;
+  grid-row: 3;
+}
 
 /* Sixth section with the class content and first */
 .content.sixth {
@@ -155,7 +155,7 @@ background-color: #41C300;
 .content.sixth article {
   grid-column: 1;
   grid-row: 1;
-background-color: #2eb300;
+  background-color: #41c300;
 }
 
 .content.sixth article:nth-child(2) {
@@ -178,3 +178,45 @@ background-color: #2eb300;
   grid-column: 2;
   grid-row: 6;
 }
+/*  Seventh section with the class content and first */
+.content.seventh {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 60px);
+    gap: 1rem;
+  }
+  /* First Child */
+.content.seventh article {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  /* Color all childs */
+  background-color: #2eb300;
+}
+/* Second Child */
+.content.seventh article:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2 / span 3;
+}
+.content.seventh article:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2 /span 3;
+}
+.content.seventh article:nth-child(4) {
+  grid-column: 3;
+  grid-row: 2;
+}
+.content.seventh article:nth-child(5) {
+  grid-column: 3;
+  grid-row: 3;
+}
+.content.seventh article:nth-child(6) {
+  grid-column: 3;
+  grid-row: 4;
+}
+.content.seventh article:nth-child(7) {
+  grid-column:  1/ span 3;
+  grid-row: 5;
+}
+/*  eighth section with the class content and first */
+/*  ninth section with the class content and first */
+/*  tenth section with the class content and first */
