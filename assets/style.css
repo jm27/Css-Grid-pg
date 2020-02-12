@@ -12,6 +12,7 @@
 html {
   min-height: 100vh;
   background-color: #ffff;
+  padding: 40px 60px;
 }
 
 article {
@@ -19,6 +20,12 @@ article {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+}
+
+/* Headers */
+.headers{
+    margin: 25px;
+    text-align: center;
 }
 /* First section with the class content and first */
 .content.first {
@@ -222,7 +229,7 @@ article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(5, 60px);
-    gap: 1rem;
+    gap: 8px;
   }
   /* First Child */
 .content.eighth article {
