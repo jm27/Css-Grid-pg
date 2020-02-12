@@ -25,11 +25,13 @@ html {
 h1.headers{
     font-size: 30px;
     font-weight: 700;
+    letter-spacing: 4px;
 }
 
 h2.headers{
     font-size: 18px;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 article {
@@ -37,6 +39,7 @@ article {
   align-items: center;
   justify-content: center;
   color: #000701;
+  border-radius: 4px;
 }
 
 section{
