@@ -12,7 +12,7 @@
 html {
   min-height: 100vh;
   background-color: #ffff;
-  padding: 40px 60px;
+  margin: 45px 90px;
 }
 
 article {
@@ -23,9 +23,9 @@ article {
 }
 
 /* Headers */
-.headers{
-    margin: 25px;
-    text-align: center;
+.headers {
+  margin: 25px;
+  text-align: center;
 }
 /* First section with the class content and first */
 .content.first {
@@ -187,12 +187,12 @@ article {
 }
 /*  Seventh section with the class content and first */
 .content.seventh {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 60px);
-    gap: 1rem;
-  }
-  /* First Child */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 60px);
+  gap: 1rem;
+}
+/* First Child */
 .content.seventh article {
   grid-column: 1 / span 3;
   grid-row: 1;
@@ -206,7 +206,7 @@ article {
 }
 .content.seventh article:nth-child(3) {
   grid-column: 2;
-  grid-row: 2 /span 3;
+  grid-row: 2 / span 3;
 }
 .content.seventh article:nth-child(4) {
   grid-column: 3;
@@ -221,17 +221,17 @@ article {
   grid-row: 4;
 }
 .content.seventh article:nth-child(7) {
-  grid-column:  1/ span 3;
+  grid-column: 1 / span 3;
   grid-row: 5;
 }
 /*  Eighth section with the class content and first */
 .content.eighth {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 60px);
-    gap: 8px;
-  }
-  /* First Child */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 60px);
+  gap: 8px;
+}
+/* First Child */
 .content.eighth article {
   grid-column: 1 / span 5;
   grid-row: 1;
@@ -252,20 +252,66 @@ article {
   grid-row: 2 / span 2;
 }
 .content.eighth article:nth-child(5) {
-  grid-column: 2 /span 2;
+  grid-column: 2 / span 2;
   grid-row: 4;
 }
 .content.eighth article:nth-child(6) {
   grid-column: 5;
-  grid-row: 2/ span 2;
+  grid-row: 2 / span 2;
 }
 .content.eighth article:nth-child(7) {
-  grid-column:  4/ span 2;
+  grid-column: 4 / span 2;
   grid-row: 4;
 }
 .content.eighth article:nth-child(8) {
-  grid-column:  1/ span 5;
+  grid-column: 1 / span 5;
   grid-row: 5;
 }
 /*  ninth section with the class content and first */
+.content.ninth {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 60px);
+  gap: 8px;
+}
+/* First Child */
+.content.ninth article {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  /* Color all childs */
+  background-color: #85d865;
+}
+/* Second Child */
+.content.ninth article:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+.content.ninth article:nth-child(3) {
+  grid-column: 1;
+  grid-row: 4 / span 2;
+}
+.content.ninth article:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.content.ninth article:nth-child(5) {
+  grid-column: 2;
+  grid-row: 3 / span 3;
+}
+.content.ninth article:nth-child(6) {
+  grid-column: 3;
+  grid-row: 2 / span 3;
+}
+.content.ninth article:nth-child(7) {
+  grid-column: 3;
+  grid-row: 5;
+}
+.content.ninth article:nth-child(8) {
+  grid-column: 4;
+  grid-row: 2 / span 2;
+}
+.content.ninth article:nth-child(9) {
+  grid-column: 4;
+  grid-row: 4 / span 2;
+}
 /*  tenth section with the class content and first */
