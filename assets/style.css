@@ -31,7 +31,7 @@ article {
 .content.first article {
   grid-column: 1;
   grid-row: span 3;
-  background-color: #2eb300;
+  background-color: #85d865;
 }
 
 .content.first article:nth-child(3) {
@@ -91,7 +91,7 @@ article {
 .content.third article {
   grid-column: 1;
   grid-row: 1;
-  background-color: #2eb300;
+  background-color: #85d865;
 }
 
 .content.third article:nth-child(2) {
@@ -124,7 +124,7 @@ article {
 .content.fifth article {
   grid-column: 1;
   grid-row: 1;
-  background-color: #2eb300;
+  background-color: #85d865;
 }
 
 .content.fifth article:nth-child(2) {
@@ -190,7 +190,7 @@ article {
   grid-column: 1 / span 3;
   grid-row: 1;
   /* Color all childs */
-  background-color: #2eb300;
+  background-color: #85d865;
 }
 /* Second Child */
 .content.seventh article:nth-child(2) {
@@ -217,6 +217,48 @@ article {
   grid-column:  1/ span 3;
   grid-row: 5;
 }
-/*  eighth section with the class content and first */
+/*  Eighth section with the class content and first */
+.content.eighth {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 60px);
+    gap: 1rem;
+  }
+  /* First Child */
+.content.eighth article {
+  grid-column: 1 / span 5;
+  grid-row: 1;
+  /* Color all childs */
+  background-color: #41c300;
+}
+/* Second Child */
+.content.eighth article:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.content.eighth article:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3 / span 2;
+}
+.content.eighth article:nth-child(4) {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 2;
+}
+.content.eighth article:nth-child(5) {
+  grid-column: 2 /span 2;
+  grid-row: 4;
+}
+.content.eighth article:nth-child(6) {
+  grid-column: 5;
+  grid-row: 2/ span 2;
+}
+.content.eighth article:nth-child(7) {
+  grid-column:  4/ span 2;
+  grid-row: 4;
+}
+.content.eighth article:nth-child(8) {
+  grid-column:  1/ span 5;
+  grid-row: 5;
+}
 /*  ninth section with the class content and first */
 /*  tenth section with the class content and first */
