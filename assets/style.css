@@ -7,26 +7,44 @@
   vertical-align: baseline;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  color: #ffff;
 }
 
 html {
   min-height: 100vh;
-  background-color: #ffff;
-  margin: 45px 40px;
+  background-color: #000701;
+  margin: 25px 40px;
+}
+/* Headers */
+.headers {
+    margin: 25px;
+    text-align: center;
+    text-shadow: -3px 0px 12px rgba(91,255,62,0.2);
+}
+
+h1.headers{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2.headers{
+    font-size: 18px;
+    font-weight: 600;
 }
 
 article {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
+  color: #000701;
 }
 
-/* Headers */
-.headers {
-  margin: 25px;
-  text-align: center;
+section{
+    font-size: x-large;
+    text-shadow: -3px 0px 12px rgba(0,7,1,0.3);
 }
+
+
 /* First section with the class content and first */
 .content.first {
   display: grid;
@@ -229,7 +247,7 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(5, 60px);
-  gap: 8px;
+  gap: 6px;
 }
 /* First Child */
 .content.eighth article {
@@ -272,7 +290,7 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(5, 60px);
-  gap: 8px;
+  gap: 6px;
 }
 /* First Child */
 .content.ninth article {
@@ -319,7 +337,7 @@ article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 43px);
-    gap: 11px;
+    gap: 6px;
   }
   /* First Child */
   .content.tenth article {
