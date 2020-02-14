@@ -7,7 +7,7 @@
   vertical-align: baseline;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color: #ffff;
+  color: #000701;
 }
 
 html {
@@ -38,7 +38,6 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000701;
   border-radius: 4px;
 }
 
@@ -47,8 +46,8 @@ section {
   text-shadow: -3px 0px 12px rgba(0, 7, 1, 0.3);
 }
 
-.content article{
-    /* Color all childs */
+.content article {
+  /* Color all childs */
   background: linear-gradient(to bottom, #65cc3e 0%, #41c300 50%, #2eb300 100%);
 }
 
@@ -56,7 +55,7 @@ section {
 .content.first {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 50px);
+  grid-template-rows: auto;
   gap: 1rem;
 }
 
@@ -84,7 +83,7 @@ section {
 .content.second {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px;
+  grid-template-rows: auto;
   gap: 1rem;
 }
 
@@ -95,7 +94,7 @@ section {
 .content.third {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 150px);
+  grid-template-rows: auto;
   gap: 1rem;
 }
 
@@ -117,7 +116,7 @@ section {
 .content.fourth {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 60px);
+  grid-template-rows: auto;
   gap: 0px;
 }
 /* First Child */
@@ -141,7 +140,7 @@ section {
 .content.fifth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 100px);
+  grid-template-rows: auto;
   gap: 0px;
 }
 /* First Child */
@@ -171,7 +170,7 @@ section {
 .content.sixth {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 50px);
+  grid-template-rows: auto;
   gap: 0px;
 }
 /* First Child */
@@ -206,8 +205,8 @@ section {
 .content.seventh {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 60px);
-  gap: 1rem;
+  grid-template-rows: auto;
+  gap: 8px;
 }
 /* First Child */
 .content.seventh article {
@@ -245,7 +244,7 @@ section {
 .content.eighth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 60px);
+  grid-template-rows: auto;
   gap: 6px;
 }
 /* First Child */
@@ -288,7 +287,7 @@ section {
 .content.ninth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 60px);
+  grid-template-rows: auto;
   gap: 6px;
 }
 /* First Child */
@@ -335,7 +334,7 @@ section {
 .content.tenth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(7, 43px);
+  grid-template-rows: auto;
   gap: 6px;
 }
 /* First Child */
@@ -381,4 +380,87 @@ section {
 .content.tenth article:nth-child(10) {
   grid-column: 4;
   grid-row: 7;
+}
+/* Large Screen */
+@media only screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      " . header header ."
+      "head1 head2 head3 head4"
+      "one two three four"
+      "head5 head6 head7 head8"
+      "five six seven eight"
+      "head9 head9 head10 head10"
+      "nine nine ten ten";
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px 60px 300px 60px 300px 60px 300px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .headers.title {
+    grid-area: header;
+  }
+  .headers.one {
+    grid-area: head1;
+  }
+  .headers.two {
+    grid-area: head2;
+  }
+  .headers.three {
+    grid-area: head3;
+  }
+  .headers.four {
+    grid-area: head4;
+  }
+  .headers.five {
+    grid-area: head5;
+  }
+  .headers.six {
+    grid-area: head6;
+  }
+  .headers.seven {
+    grid-area: head7;
+  }
+  .headers.eight {
+    grid-area: head8;
+  }
+  .headers.nine {
+    grid-area: head9;
+  }
+  .headers.ten {
+    grid-area: head10;
+  }
+  .content.first {
+    grid-area: one;
+  }
+  .content.second {
+    grid-area: two;
+  }
+  .content.third {
+    grid-area: three;
+  }
+  .content.fourth {
+    grid-area: four;
+  }
+  .content.fifth {
+    grid-area: five;
+  }
+  .content.sixth {
+    grid-area: six;
+  }
+  .content.seventh {
+    grid-area: seven;
+  }
+  .content.eighth {
+    grid-area: eight;
+  }
+  .content.ninth {
+    grid-area: nine;
+  }
+  .content.tenth {
+    grid-area: ten;
+  }
 }
