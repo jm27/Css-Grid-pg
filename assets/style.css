@@ -381,6 +381,91 @@ section {
   grid-column: 4;
   grid-row: 7;
 }
+/* Medium Screen */
+@media only screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-areas:
+          " header header header"
+          "head1 head2 head3"
+          "one two three"
+          "head4 head5 head6"
+          "four five six"
+          "head7 head8 head9"
+          "seven eight nine"
+          "head10 head10 head10"
+          "ten ten ten";
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 60px 60px 300px 60px 300px 60px 300px 60px 300px;
+        justify-content: center;
+        text-align: center;
+      }
+      
+.headers.title {
+    grid-area: header;
+  }
+.headers.one {
+    grid-area: head1;
+  }
+.headers.two {
+    grid-area: head2;
+  }
+.headers.three {
+    grid-area: head3;
+  }
+.headers.four {
+    grid-area: head4;
+  }
+.headers.five {
+    grid-area: head5;
+  }
+.headers.six {
+    grid-area: head6;
+  }
+.headers.seven {
+    grid-area: head7;
+  }
+.headers.eight {
+    grid-area: head8;
+  }
+.headers.nine {
+    grid-area: head9;
+  }
+.headers.ten {
+    grid-area: head10;
+  }
+.content.first {
+    grid-area: one;
+  }
+.content.second {
+    grid-area: two;
+  }
+.content.third {
+    grid-area: three;
+  }
+.content.fourth {
+    grid-area: four;
+  }
+.content.fifth {
+    grid-area: five;
+  }
+.content.sixth {
+    grid-area: six;
+  }
+.content.seventh {
+    grid-area: seven;
+  }
+.content.eighth {
+    grid-area: eight;
+  }
+.content.ninth {
+    grid-area: nine;
+  }
+.content.tenth {
+    grid-area: ten;
+  }
+
 /* Large Screen */
 @media only screen and (min-width: 1024px) {
   main {
@@ -398,69 +483,6 @@ section {
     grid-template-rows: 60px 60px 300px 60px 300px 60px 300px;
     justify-content: center;
     text-align: center;
-  }
+  };
 
-  .headers.title {
-    grid-area: header;
-  }
-  .headers.one {
-    grid-area: head1;
-  }
-  .headers.two {
-    grid-area: head2;
-  }
-  .headers.three {
-    grid-area: head3;
-  }
-  .headers.four {
-    grid-area: head4;
-  }
-  .headers.five {
-    grid-area: head5;
-  }
-  .headers.six {
-    grid-area: head6;
-  }
-  .headers.seven {
-    grid-area: head7;
-  }
-  .headers.eight {
-    grid-area: head8;
-  }
-  .headers.nine {
-    grid-area: head9;
-  }
-  .headers.ten {
-    grid-area: head10;
-  }
-  .content.first {
-    grid-area: one;
-  }
-  .content.second {
-    grid-area: two;
-  }
-  .content.third {
-    grid-area: three;
-  }
-  .content.fourth {
-    grid-area: four;
-  }
-  .content.fifth {
-    grid-area: five;
-  }
-  .content.sixth {
-    grid-area: six;
-  }
-  .content.seventh {
-    grid-area: seven;
-  }
-  .content.eighth {
-    grid-area: eight;
-  }
-  .content.ninth {
-    grid-area: nine;
-  }
-  .content.tenth {
-    grid-area: ten;
-  }
 }
