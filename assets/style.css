@@ -55,7 +55,7 @@ section {
 .content.first {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(6, 45px);
   gap: 1rem;
 }
 
@@ -83,7 +83,7 @@ section {
 .content.second {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 270px;
   gap: 1rem;
 }
 
@@ -94,7 +94,7 @@ section {
 .content.third {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows:repeat(2, 135px);
   gap: 1rem;
 }
 
@@ -115,32 +115,32 @@ section {
 /* Fourth section with the class content and first */
 .content.fourth {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 90px);
   gap: 0px;
 }
 /* First Child */
 .content.fourth article {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
+  grid-column: 1;
+  grid-row: 1;
 }
 /* Second Child */
 .content.fourth article:nth-child(2) {
-  grid-row: 4 / span 2;
+  grid-row: 3;
 }
 .content.fourth article:nth-child(3) {
-  grid-column: 4 / span 2;
-  grid-row: 1 / span 2;
+  grid-column: 3;
+  grid-row: 1;
 }
 .content.fourth article:nth-child(4) {
-  grid-column: 4 / span 2;
-  grid-row: 4 / span 2;
+  grid-column: 3;
+  grid-row: 3;
 }
 /* Fifth section with the class content and first */
 .content.fifth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(3, 90px);
   gap: 0px;
 }
 /* First Child */
@@ -170,7 +170,7 @@ section {
 .content.sixth {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(6, 45px);
   gap: 0px;
 }
 /* First Child */
@@ -205,7 +205,7 @@ section {
 .content.seventh {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(5, 50px);
   gap: 8px;
 }
 /* First Child */
@@ -244,7 +244,7 @@ section {
 .content.eighth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(5, 50px);
   gap: 6px;
 }
 /* First Child */
@@ -287,7 +287,7 @@ section {
 .content.ninth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(5, 50px);
   gap: 6px;
 }
 /* First Child */
@@ -334,7 +334,7 @@ section {
 .content.tenth {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(7, 35px);
   gap: 6px;
 }
 /* First Child */
@@ -437,33 +437,43 @@ section {
   }
 .content.first {
     grid-area: one;
+    grid-template-rows: auto;
   }
 .content.second {
     grid-area: two;
+    grid-template-rows: auto;
   }
 .content.third {
     grid-area: three;
+    grid-template-rows: auto;
   }
 .content.fourth {
     grid-area: four;
+    grid-template-rows: auto;
   }
 .content.fifth {
     grid-area: five;
+    grid-template-rows: auto;
   }
 .content.sixth {
     grid-area: six;
+    grid-template-rows: auto;
   }
 .content.seventh {
     grid-area: seven;
+    grid-template-rows: auto;
   }
 .content.eighth {
     grid-area: eight;
+    grid-template-rows: auto;
   }
 .content.ninth {
     grid-area: nine;
+    grid-template-rows: auto;
   }
 .content.tenth {
     grid-area: ten;
+    grid-template-rows: auto;
   }
 
 /* Large Screen */
