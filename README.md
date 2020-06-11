@@ -12,6 +12,7 @@ Clone the git project to your machine (example below is using ssh)
 git clone git@github.com:jm27/css-grid-pg.git
 
 ## Demo
+![Homepage](CSS_Grid_Playground.gif)
 There is a demo of this app available on github. You can interact with the app and see the full functionality. 
 
 ## Visit Demo Site
